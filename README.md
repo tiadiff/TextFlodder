@@ -59,7 +59,7 @@ swiftc -o Flodder.app/Contents/MacOS/Flodder FlodderApp.swift ContentView.swift 
 
 ---
 
-## Windows Version 
+# TextFlodder for Windows 10/11 🌊
 
 A native version for Windows 10/11 is available in the `flodder_windows` folder.
 
