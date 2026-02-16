@@ -9,7 +9,7 @@ A minimal and elegant automation utility for macOS designed for rapid message si
 
 - **Modern Design**: Compact horizontal bar with native macOS 15 glassmorphism effect.
 - **Rapid Automation**: Simulates text typing followed by the "Enter" key.
-- **Global Command**: Toggle flooding from any application using `Cmd + Shift + Alt + F`.
+- **Global Command**: Toggle flooding from any application using keyboard shortcut.
 - **Customizable Delay**: Set the interval between sends in milliseconds.
 - **Custom Icon**: Native high-resolution icon with transparency.
 
@@ -28,13 +28,13 @@ A minimal and elegant automation utility for macOS designed for rapid message si
    - Set the desired interval in "DELAY" (e.g., 1000 for 1 second).
 4. **Execution**:
    - Focus on the application where you want to send the text (e.g., Notes, WhatsApp, Terminal).
-   - Press the global combination `⌘ + ⇧ + ⌥ + F` to start flooding.
+   - Press the global combination (`Cmd + Shift + Alt + F`) to start flooding.
    - Press the same combination to stop.
 
 ## Troubleshooting (Permissions)
 
 If the app is running but nothing happens:
-- Look for the **Orange Warning Triangle** ⚠️ next to the START button. This means macOS is blocking the app from simulating keys.
+- Look for the **Orange Warning Triangle** ⚠️ next to the START button. <br>This means macOS is blocking the app from simulating keys.
 - **Resetting Permissions**:
     1. Open `System Settings > Privacy & Security > Accessibility`.
     2. Select `Flodder` and remove it using the `-` button.
