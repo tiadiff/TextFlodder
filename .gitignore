@@ -1,0 +1,7 @@
+.DS_Store
+#Exclude the binary bundle to keep repo clean, but user might want it.
+#Usually it's better to keep source only.
+#Flodder.app/
+icon.iconset/
+icon.icns
+/tmp/tempicns.rsrc
