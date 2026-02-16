@@ -1,41 +1,41 @@
 # TextFlodderm-MacOS 🌊
 
-Un'utilità di automazione minimale ed elegante per macOS progettata per simulare l'invio rapido di messaggi (flooding).
+A minimal and elegant automation utility for macOS designed for rapid message simulation (flooding).
 
-## Caratteristiche
+## Features
 
-- **Design Moderno**: Barra orizzontale compatta con effetto glassmorphism nativo per macOS 15.
-- **Automazione Rapida**: Simula la digitazione del testo seguita dal tasto "Invio".
-- **Comando Globale**: Attiva/Disattiva il flooding da qualsiasi applicazione con `Cmd + Shift + Alt + F`.
-- **Delay Personalizzabile**: Imposta l'intervallo tra un invio e l'altro in millisecondi.
-- **Icona Personalizzata**: Icona nativa ad alta risoluzione con trasparenza.
+- **Modern Design**: Compact horizontal bar with native macOS 15 glassmorphism effect.
+- **Rapid Automation**: Simulates text typing followed by the "Enter" key.
+- **Global Command**: Toggle flooding from any application using `Cmd + Shift + Alt + F`.
+- **Customizable Delay**: Set the interval between sends in milliseconds.
+- **Custom Icon**: Native high-resolution icon with transparency.
 
-## Requisiti
+## Requirements
 
-- macOS 11.0 o superiore (Ottimizzato per macOS 15).
-- Permessi di **Accessibilità** (necessari per simulare gli eventi della tastiera).
+- macOS 11.0 or higher (Optimized for macOS 15).
+- **Accessibility** Permissions (required to simulate keyboard events).
 
-## Come Utilizzare
+## How to Use
 
-1. **Installazione**: Scarica o compila l'applicazione `Flodder.app`.
-2. **Permessi**: Vai in `Impostazioni di Sistema > Privacy e Sicurezza > Accessibilità` e aggiungi `Flodder.app` all'elenco delle app consentite.
-3. **Configurazione**:
-   - Apri l'app.
-   - Digita il messaggio desiderato nel campo "MESSAGGIO".
-   - Imposta il ritardo desiderato in "DELAY" (es. 1000 per 1 secondo).
-4. **Esecuzione**:
-   - Spostati sull'applicazione dove vuoi inviare il testo (es. Note, WhatsApp, Terminale).
-   - Premi la combinazione globale `⌘ + ⇧ + ⌥ + F` per avviare il flooding.
-   - Premi la stessa combinazione per fermarlo.
+1. **Installation**: Download or compile the `Flodder.app` application.
+2. **Permissions**: Go to `System Settings > Privacy & Security > Accessibility` and add `Flodder.app` to the allowed apps list.
+3. **Configuration**:
+   - Open the app.
+   - Type your desired message in the "MESSAGGIO" field.
+   - Set the desired interval in "DELAY" (e.g., 1000 for 1 second).
+4. **Execution**:
+   - Focus on the application where you want to send the text (e.g., Notes, WhatsApp, Terminal).
+   - Press the global combination `⌘ + ⇧ + ⌥ + F` to start flooding.
+   - Press the same combination to stop.
 
-## Sviluppo
+## Development
 
-Il progetto è scritto in Swift e SwiftUI.
+The project is written in Swift and SwiftUI.
 
-### Compilazione manuale
+### Manual Compilation
 ```bash
 swiftc -o Flodder.app/Contents/MacOS/Flodder FlodderApp.swift ContentView.swift FlooderManager.swift KeyEventSimulator.swift
 ```
 
 ---
-Sviluppato con ❤️ per macOS.
+Developed with ❤️ for macOS.
