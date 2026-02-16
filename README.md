@@ -39,6 +39,12 @@ If the app is running but nothing happens:
     4. Ensure the toggle is **ON**.
     5. Restart the app.
 
+- **Advanced Reset (Terminal)**:
+    If the UI settings don't work, run this command in your Terminal to force-reset the privacy database for Flodder:
+    ```bash
+    tccutil reset Accessibility com.tiadiff.flodder
+    ```
+
 ## Development
 
 The project is written in Swift and SwiftUI.
