@@ -17,12 +17,15 @@ struct KeyEventSimulator {
                     upEvent.post(tap: .cghidEventTap)
                 }
             }
-            // Small delay between characters to avoid overwhelming the receiver
-            Thread.sleep(forTimeInterval: 0.01)
+            // Small sleep between characters to ensure the UI receiver can keep up
+            usleep(20000) // 20ms
         }
     }
     
     static func pressEnter() {
+        // Small delay before enter to ensure the previous characters are processed
+        usleep(50000) // 50ms
+        
         let enterKey: CGKeyCode = 0x24 // kVK_Return
         
         let keyDown = CGEvent(keyboardEventSource: nil, virtualKey: enterKey, keyDown: true)

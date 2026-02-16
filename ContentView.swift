@@ -57,14 +57,30 @@ struct ContentView: View {
                     )
             }
             .buttonStyle(PlainButtonStyle())
+            
+            if !manager.isPermissionGranted {
+                Button(action: {
+                    manager.checkPermissions()
+                    // Prompt again if they click the warning
+                    let options = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true]
+                    AXIsProcessTrustedWithOptions(options as CFDictionary)
+                }) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundColor(.orange)
+                }
+                .buttonStyle(PlainButtonStyle())
+                .help("Permessi di Accessibilità mancanti! Clicca per riprovare.")
+            }
+
+
 
             // Status Indicator
             indicator
                 .padding(.bottom, 8)
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 20)
         .padding(.vertical, 8)
-        .frame(width: 400, height: 48)
+        .frame(width: 420, height: 52)
         .background(VisualEffectView().ignoresSafeArea())
 
 
