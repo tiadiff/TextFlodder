@@ -1,6 +1,9 @@
-# TextFlodderm-MacOS 🌊
+# TextFlodder for MacOS 🌊
 
 A minimal and elegant automation utility for macOS designed for rapid message simulation (flooding).
+
+<img width="483" height="120" alt="image" src="https://github.com/user-attachments/assets/1e77a70c-a9a2-44cf-b431-a60513bf24fe" />
+
 
 ## Features
 
