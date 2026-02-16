@@ -28,6 +28,17 @@ A minimal and elegant automation utility for macOS designed for rapid message si
    - Press the global combination `⌘ + ⇧ + ⌥ + F` to start flooding.
    - Press the same combination to stop.
 
+## Troubleshooting (Permissions)
+
+If the app is running but nothing happens:
+- Look for the **Orange Warning Triangle** ⚠️ next to the START button. This means macOS is blocking the app from simulating keys.
+- **Resetting Permissions**:
+    1. Open `System Settings > Privacy & Security > Accessibility`.
+    2. Select `Flodder` and remove it using the `-` button.
+    3. Manually drag `Flodder.app` back into the list.
+    4. Ensure the toggle is **ON**.
+    5. Restart the app.
+
 ## Development
 
 The project is written in Swift and SwiftUI.
