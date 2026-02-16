@@ -58,4 +58,18 @@ swiftc -o Flodder.app/Contents/MacOS/Flodder FlodderApp.swift ContentView.swift 
 ```
 
 ---
-Developed with ❤️ for macOS.
+
+## Windows Version 
+
+A native version for Windows 10/11 is available in the `flodder_windows` folder.
+
+- **Features**: Same flooding logic, dark mode UI, and sequential typing.
+- **Hotkey**: `Ctrl + Shift + Alt + F` (Different from macOS due to system constraints).
+- **No Installation**: The `Flodder.exe` file is portable and ready to run.
+
+### Location
+You can find the source code and the executable instructions in:
+`/flodder_windows/`
+
+---
+Developed with ❤️ for macOS and Windows.

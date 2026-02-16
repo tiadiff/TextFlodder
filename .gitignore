@@ -5,3 +5,6 @@
 icon.iconset/
 icon.icns
 /tmp/tempicns.rsrc
+flodder_windows/bin/
+flodder_windows/obj/
+flodder_windows/publish/
